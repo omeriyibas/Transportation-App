@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sayfa" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EnYakinSubeController">
+    <children>
+        <ComboBox fx:id="cb" layoutX="275.0" layoutY="146.0" onAction="#islem" prefWidth="150.0" />
+        <Label layoutX="123.0" layoutY="144.0" text="Oturduğunuz Il">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <JFXButton id="backicon" layoutX="23.0" layoutY="14.0" onAction="#geriDon" prefHeight="55.0" prefWidth="70.0" stylesheets="@stil.css" />
+      <Label fx:id="label" alignment="CENTER" layoutX="135.0" layoutY="83.0" prefHeight="30.0" prefWidth="304.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="183.0" fitWidth="339.0" layoutX="123.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@map.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

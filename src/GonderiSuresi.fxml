@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sayfa" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GonderiSuresiController">
+    <children>
+        <ComboBox fx:id="cb1" layoutX="287.0" layoutY="75.0" prefWidth="150.0" />
+        <ComboBox fx:id="cb2" layoutX="287.0" layoutY="133.0" prefWidth="150.0" />
+        <Label layoutX="197.0" layoutY="72.0" text="Nerden">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="197.0" layoutY="131.0" text="Nereye">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="express_check" layoutX="271.0" layoutY="191.0" mnemonicParsing="false" text="Express">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </CheckBox>
+        <JFXButton fx:id="Button" alignment="CENTER" buttonType="RAISED" layoutX="235.0" layoutY="267.0" onAction="#hesapla" style="-fx-background-color: blue; -fx-background-radius: 10;" text="Hesapla" textFill="WHITE">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </JFXButton>
+        <JFXButton id="backicon" layoutX="23.0" layoutY="14.0" onAction="#geriDon" prefHeight="55.0" prefWidth="70.0" stylesheets="@stil.css" />
+    </children>
+</AnchorPane>

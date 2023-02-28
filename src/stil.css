@@ -1,0 +1,15 @@
+#button{
+    
+    -fx-graphic: url("adminIcon.png")
+}
+.menu-item {
+    -fx-padding: 0 57 0 57
+}
+
+#backicon{
+    -fx-graphic: url("backIcon.png")
+}
+
+#asd{
+    -fx-graphic: url("searchIcon.png")
+}

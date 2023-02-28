@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import com.jfoenix.controls.JFXButton?>
+<AnchorPane fx:id="sayfa" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KargoTakipController">
+   <children>
+      <JFXTextField fx:id="kargo_tf" layoutX="226.0" layoutY="84.0" onAction="#ara" />
+      <Label layoutX="127.0" layoutY="160.0" text="Gorevli Adı:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="gorevliAdi_lb" layoutX="242.0" layoutY="160.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="211.0" text="Gonderi Durumu:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="gonderiDurumu_lb" layoutX="209.0" layoutY="241.0" prefHeight="50.0" prefWidth="143.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <JFXButton id="backicon" layoutX="23.0" layoutY="14.0" onAction="#geriDon" prefHeight="55.0" prefWidth="70.0" stylesheets="@stil.css" />
+
+   </children>
+</AnchorPane>

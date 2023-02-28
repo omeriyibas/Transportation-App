@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminGiris" prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminGirisController">
+   <children>
+      <ImageView fitHeight="162.0" fitWidth="243.0" layoutX="182.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@AdminIcon2.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="kullnaiciAdi_tf" layoutX="188.0" layoutY="222.0" promptText="Kullanıcı Adı">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="sifre_tf" layoutX="188.0" layoutY="296.0" promptText="Şifre">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="267.0" layoutY="376.0" onAction="#GirisYap" style="-fx-background-color: blue; -fx-background-radius: 5;" text="Giris" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sayfa" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KargoIstekController">
+   <children>
+      <JFXTextArea fx:id="adres_tf" layoutX="68.0" layoutY="113.0" promptText="Adres Bilgileriniz" />
+      <JFXTextField fx:id="adSoyad_tf" alignment="CENTER" layoutX="188.0" layoutY="54.0" promptText="Adınız Soyadiniz">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton alignment="CENTER" layoutX="257.0" layoutY="317.0" onAction="#bilgleriKaydet" style="-fx-background-color: blue;" text="Gönder" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="backicon" layoutX="23.0" layoutY="14.0" onAction="#geriDon" prefHeight="55.0" prefWidth="70.0" stylesheets="@stil.css" />
+   </children>
+</AnchorPane>

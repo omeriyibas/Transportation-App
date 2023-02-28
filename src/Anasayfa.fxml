@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anasayfa" minHeight="600.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AnaSayfaController">
+   <children>
+      <JFXButton id="button" fx:id="adminGiris_Button" layoutX="399.0" layoutY="30.0" maxHeight="326.0" maxWidth="391.0" minHeight="20.0" minWidth="20.0" onAction="#AdminGirisSayfasinaGit" prefHeight="50.0" prefWidth="66.0" stylesheets="@stil.css" />
+      <MenuButton id="islemSecimi" layoutX="150.0" layoutY="321.0" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: blue; -fx-text-alignment: center;" stylesheets="@stil.css" text="İşlem Seç" textAlignment="CENTER">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#kargoIstekSayfasinaGit" text="Kargo İstek" />
+          <MenuItem mnemonicParsing="false" onAction="#KargoTakipSayfasinaGit" text="Kargo Takibi" />
+          <MenuItem fx:id="kargoUcreti_btn" mnemonicParsing="false" onAction="#fiyatHesaplamaSayfasinaGit" text="Gönderi Ücreti" />
+            <MenuItem fx:id="gonderiSuresi_btn" mnemonicParsing="false" onAction="#gonderiSuresiSayfasinaGit" text="Gönderi Süresi" />
+            <MenuItem mnemonicParsing="false" onAction="#enyakinSubeSayfasinaGit" text="En Yakın Şube" />
+        </items>
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </MenuButton>
+      <ImageView fitHeight="216.0" fitWidth="281.0" layoutX="142.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="400.0" layoutY="80.0" text="Admin Girişi" />
+   </children>
+</AnchorPane>

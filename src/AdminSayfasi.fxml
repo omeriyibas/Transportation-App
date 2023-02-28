@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminSayfasi" minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminSayfasiController">
+    <children>
+        <MenuButton id="islemSecimi" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="347.0" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="277.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-text-alignment: center;" stylesheets="@stil.css" text="İşlem Seç" textAlignment="CENTER">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#gonderiDrumuGuncellemeSayfasinaGit" text="Gönderi Durumu Güncelleme" />
+            <MenuItem mnemonicParsing="false" onAction="#gonderiKayiGuncellemeSayfasinaGit" text="Gonderi Kaydı Güncelleme" />
+                <MenuItem mnemonicParsing="false" onAction="#SubeKayitSayfasinaGit" text="Şube Ekleme Kaldırma" />
+            </items>
+            <font>
+                <Font size="20.0" />
+            </font>
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+        </MenuButton>
+        <ImageView fitHeight="328.0" fitWidth="353.0" layoutX="124.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@AdminIcon2.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
